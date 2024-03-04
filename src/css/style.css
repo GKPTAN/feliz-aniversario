@@ -4,15 +4,49 @@
 
 body {
     font-family: "Ruluko", sans-serif;
+    background-color: black;
 }
 
-.titulo {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 6em;
+.botoes .botao {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-right: 10px;
+    border: none;
+    background-color: black;
+    color: rgb(218, 120, 120);
 }
 
 @media (max-width: 412px) {
+
     .titulo {
-        font-size: 3em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2em;
+        text-align: center;
+        margin: 32px 0px;
+    }
+
+    .botoes {
+        text-align: center;
+    }
+
+    .botoes .botao {
+        font-size: 1.2em;
+        font-weight: normal;
+        margin-right: 10px;
+        border: none;
+        background-color: black;
+        color: rgb(0, 140, 255);
+    }
+
+    .botoes .botao:focus {
+        font-weight: bold;
+        color: red;
+        text-shadow: red 0 0 16px
+                     red 0 0 32px
+                     red 0 0 64px
+                     red 0 0 128px
+                     red 0 0 256px;
+        outline: 0;
+        transition: all 0.4s ease-in;
     }
 }
