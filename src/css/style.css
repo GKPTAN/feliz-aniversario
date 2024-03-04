@@ -4,7 +4,6 @@
 
 body {
     font-family: "Ruluko", sans-serif;
-    background-color: black;
 }
 
 .botoes .botao {
@@ -12,7 +11,7 @@ body {
     font-weight: normal;
     margin-right: 10px;
     border: none;
-    background-color: black;
+    background-color: white;
     color: rgb(218, 120, 120);
 }
 
@@ -22,7 +21,7 @@ body {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 2em;
         text-align: center;
-        margin: 32px 0px;
+        margin: 32px 0px 16px 0px;
     }
 
     .botoes {
@@ -32,33 +31,27 @@ body {
     .botoes .botao {
         position: relative;
         display: inline-block;
-        font-size: 1.2em;
+        font-size: 1.4em;
         font-weight: normal;
         margin-right: 10px;
         border: none;
-        background-color: black;
+        background-color: white;
         color: rgb(0, 140, 255);
     }
 
-    .botao::after {
-        bottom: -3px;
-        transform-origin: right;
-    }
-
     .botao::before {
-        top: -3px;
-        transform-origin: left;
+        content: url(../imagens/coração.png);
+        position: absolute;
+        top: -20px;
+        transform: translateX(-10%);
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 1s ease-in-out;
     }
 
-    .botao::before, .botao::after {
-        content: "";
-        left: 0;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: #00fffc;
-        transform: scaleX(0);
-        transition: transform 0.25s;
+    .botao:focus::before {
+        visibility: visible;
+        opacity: 1;
     }
 
     .botoes .botao:focus {
@@ -69,7 +62,6 @@ body {
                      red 0 0 64px
                      red 0 0 128px
                      red 0 0 256px;
-        outline: 0;
         transition: all 0.4s ease-in;
     }
 }
