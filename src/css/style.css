@@ -30,12 +30,35 @@ body {
     }
 
     .botoes .botao {
+        position: relative;
+        display: inline-block;
         font-size: 1.2em;
         font-weight: normal;
         margin-right: 10px;
         border: none;
         background-color: black;
         color: rgb(0, 140, 255);
+    }
+
+    .botao::after {
+        bottom: -3px;
+        transform-origin: right;
+    }
+
+    .botao::before {
+        top: -3px;
+        transform-origin: left;
+    }
+
+    .botao::before, .botao::after {
+        content: "";
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #00fffc;
+        transform: scaleX(0);
+        transition: transform 0.25s;
     }
 
     .botoes .botao:focus {
