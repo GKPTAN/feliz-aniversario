@@ -4,7 +4,7 @@
 
 body {
     font-family: "Ruluko", sans-serif;
-    background-color: black;
+    background-color: white;
 }
 
 .botoes .botao {
@@ -53,7 +53,6 @@ body {
         position: relative;
         display: inline-block;
         font-size: 1.4em;
-        font-weight: ;
         margin-right: 10px;
         border: none;
         background-color: black;
