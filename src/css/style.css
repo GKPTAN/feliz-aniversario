@@ -12,7 +12,7 @@ body {
     font-weight: normal;
     margin-right: 10px;
     border: none;
-    background-color: white;
+    background-color: black;
     color: rgb(218, 120, 120);
 }
 
@@ -53,10 +53,10 @@ body {
         position: relative;
         display: inline-block;
         font-size: 1.4em;
-        font-weight: normal;
+        font-weight: ;
         margin-right: 10px;
         border: none;
-        background-color: white;
+        background-color: black;
         color: rgb(0, 140, 255);
     }
 
@@ -126,7 +126,7 @@ body {
         font-weight: normal;
         margin-right: 10px;
         border: none;
-        background-color: white;
+        background-color: black;
         color: rgb(0, 140, 255);
     }
 
