@@ -18,6 +18,10 @@ body {
 
 @media (max-width: 768px) {
 
+    body {
+        background-color: black;
+    }
+
     .video-animation {
         position: relative;
         overflow: hidden;
@@ -87,6 +91,10 @@ body {
 }
 
 @media (max-width: 412px) {
+
+    body {
+        background-color: black;
+    }
 
     .video-animation {
         position: relative;
