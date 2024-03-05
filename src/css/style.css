@@ -4,6 +4,7 @@
 
 body {
     font-family: "Ruluko", sans-serif;
+    background-color: black;
 }
 
 .botoes .botao {
@@ -15,13 +16,102 @@ body {
     color: rgb(218, 120, 120);
 }
 
-@media (max-width: 412px) {
+@media (max-width: 768px) {
+
+    .video-animation {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .video-animation video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        clip-path: url(#text-clip);
+        -webkit-clip-path: url(#text-clip);
+    }
 
     .titulo {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 2em;
+        font-size: 3.5em;
         text-align: center;
-        margin: 32px 0px 16px 0px;
+        margin: 32px 0px 18px 0px;
+        color: white;
+        z-index: 1;
+        position: relative;
+        -webkit-mask: url(#text-clip);
+        mask: url(#text-clip);
+    }
+
+    .botoes {
+        text-align: center;
+    }
+
+    .botoes .botao {
+        position: relative;
+        display: inline-block;
+        font-size: 1.4em;
+        font-weight: normal;
+        margin-right: 10px;
+        border: none;
+        background-color: white;
+        color: rgb(0, 140, 255);
+    }
+
+    .botao::before {
+        content: url(../imagens/coração.png);
+        position: absolute;
+        top: -20px;
+        transform: translateX(-10%);
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 1s ease-in-out;
+    }
+
+    .botao:focus::before {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .botoes .botao:focus {
+        font-weight: bold;
+        color: red;
+        text-shadow: red 0 0 16px
+                     red 0 0 32px
+                     red 0 0 64px
+                     red 0 0 128px
+                     red 0 0 256px;
+        transition: all 0.4s ease-in;
+    }
+}
+
+@media (max-width: 412px) {
+
+    .video-animation {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .video-animation video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        clip-path: url(#text-clip);
+        -webkit-clip-path: url(#text-clip);
+    }
+
+    .titulo {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 3.5em;
+        text-align: center;
+        margin: 32px 0px 18px 0px;
+        color: white;
+        z-index: 1;
+        position: relative;
+        -webkit-mask: url(#text-clip);
+        mask: url(#text-clip);
     }
 
     .botoes {
