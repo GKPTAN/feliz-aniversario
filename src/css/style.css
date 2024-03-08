@@ -7,15 +7,6 @@ body {
     background-color: black;
 }
 
-.botoes .botao {
-    font-size: 1.2em;
-    font-weight: normal;
-    margin-right: 10px;
-    border: none;
-    background-color: black;
-    color: rgb(218, 120, 120);
-}
-
 @media (max-width: 768px) {
 
     body {
@@ -41,7 +32,6 @@ body {
         font-size: 3.5em;
         font-weight: bolder;
         text-align: center;
-        margin: 32px 0px 18px 0px;
         color: white;
         z-index: 1;
         position: relative;
@@ -50,7 +40,10 @@ body {
     }
 
     .botoes {
-        text-align: center;
+        display: block;
+        position: absolute;
+        margin-left: 75px;
+        top: 90px;
     }
 
     .botoes .botao {
@@ -70,7 +63,7 @@ body {
         transform: translateX(-10%);
         visibility: hidden;
         opacity: 0;
-        transition: visibility 0s, opacity 1s ease-in-out;
+        transition: visibility 1s, opacity 1s ease-in-out;
     }
 
     .botao:focus::before {
@@ -86,14 +79,15 @@ body {
                      red 0 0 64px
                      red 0 0 128px
                      red 0 0 256px;
-        transition: all 0.4s ease-in;
+        transition: all 1s ease-in-out;
     }
 }
 
 @media (max-width: 412px) {
 
     body {
-        background-color: black;
+        background-image: url(../imagens/background2.jpg);
+        background-size: cover;
     }
 
     .video-animation {
@@ -114,7 +108,7 @@ body {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 3.5em;
         text-align: center;
-        margin: 32px 0px 18px 0px;
+        margin: 100px 0px 0px 0px;
         color: white;
         z-index: 1;
         position: relative;
@@ -123,7 +117,10 @@ body {
     }
 
     .botoes {
-        text-align: center;
+        display: block;
+        position: absolute;
+        margin-left: 75px;
+        top: 90px;
     }
 
     .botoes .botao {
@@ -133,7 +130,7 @@ body {
         font-weight: normal;
         margin-right: 10px;
         border: none;
-        background-color: black;
+        background-color: white;
         color: rgb(0, 140, 255);
     }
 
@@ -144,7 +141,7 @@ body {
         transform: translateX(-10%);
         visibility: hidden;
         opacity: 0;
-        transition: visibility 0s, opacity 1s ease-in-out;
+        transition: visibility 1s, opacity 1s ease-in-out;
     }
 
     .botao:focus::before {
@@ -160,6 +157,6 @@ body {
                      red 0 0 64px
                      red 0 0 128px
                      red 0 0 256px;
-        transition: all 0.4s ease-in;
+        transition: all 1s ease-in-out;
     }
 }
