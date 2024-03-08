@@ -100,7 +100,7 @@ body {
     .video-animation video {
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 80%;
         object-fit: cover;
         clip-path: url(#text-clip);
         -webkit-clip-path: url(#text-clip);
@@ -119,13 +119,13 @@ body {
 
     .botoes {
         margin-left: 75px;
-        transform: translateY(-50%);
+        transform: translateY(-60%);
     }
 
     .botoes .botao {
         position: relative;
         display: inline-block;
-        font-size: 1.4em;
+        font-size: 2em;
         font-weight: normal;
         margin-right: 10px;
         border: none;
@@ -137,7 +137,7 @@ body {
     .botao::before {
         content: url(../imagens/coração.png);
         position: absolute;
-        top: -20px;
+        top: -35px;
         transform: translateX(-10%);
         visibility: hidden;
         opacity: 0;
