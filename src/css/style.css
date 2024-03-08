@@ -28,6 +28,7 @@ body {
     }
 
     .titulo {
+        margin: 100px 0px 0px 0px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 3.5em;
         font-weight: bolder;
@@ -40,10 +41,8 @@ body {
     }
 
     .botoes {
-        display: block;
-        position: absolute;
         margin-left: 75px;
-        top: 90px;
+        transform: translateY(-50%);
     }
 
     .botoes .botao {
@@ -54,6 +53,7 @@ body {
         border: none;
         background-color: black;
         color: rgb(0, 140, 255);
+        transition: all 1s ease-in-out;
     }
 
     .botao::before {
@@ -63,7 +63,7 @@ body {
         transform: translateX(-10%);
         visibility: hidden;
         opacity: 0;
-        transition: visibility 1s, opacity 1s ease-in-out;
+        transition: all 1s ease-in-out;
     }
 
     .botao:focus::before {
@@ -73,7 +73,9 @@ body {
 
     .botoes .botao:focus {
         font-weight: bold;
+        background-color: black;
         color: red;
+        border-radius: 50%;
         text-shadow: red 0 0 16px
                      red 0 0 32px
                      red 0 0 64px
@@ -108,7 +110,6 @@ body {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 3.5em;
         text-align: center;
-        margin: 100px 0px 0px 0px;
         color: white;
         z-index: 1;
         position: relative;
@@ -117,10 +118,8 @@ body {
     }
 
     .botoes {
-        display: block;
-        position: absolute;
         margin-left: 75px;
-        top: 90px;
+        transform: translateY(-50%);
     }
 
     .botoes .botao {
@@ -132,6 +131,7 @@ body {
         border: none;
         background-color: white;
         color: rgb(0, 140, 255);
+        transition: all 1s ease-in-out;
     }
 
     .botao::before {
@@ -141,7 +141,7 @@ body {
         transform: translateX(-10%);
         visibility: hidden;
         opacity: 0;
-        transition: visibility 1s, opacity 1s ease-in-out;
+        transition: all 1s ease-in-out;
     }
 
     .botao:focus::before {
@@ -151,7 +151,10 @@ body {
 
     .botoes .botao:focus {
         font-weight: bold;
+        background-color: black;
         color: red;
+        padding: 8px;
+        border-radius: 50%;
         text-shadow: red 0 0 16px
                      red 0 0 32px
                      red 0 0 64px
